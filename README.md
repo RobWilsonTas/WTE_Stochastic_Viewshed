@@ -2,4 +2,4 @@ A script for QGIS that determins a stochastic viewshed by running multiple itera
 
 This simulates how vegetation is not entirely opaque to a viewer
 
-It also visually describes the uncertainty of the data
+It also visually describes the uncertainty of deriving viewsheds from this data
