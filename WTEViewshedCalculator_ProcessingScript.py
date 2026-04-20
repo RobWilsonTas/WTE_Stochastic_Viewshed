@@ -31,10 +31,10 @@ class WTEViewshed(QgsProcessingAlgorithm):
             self.NEST_ID_FIELD, 'Nest ID field', parentLayerParameterName=self.NEST_LAYER))
 
         self.addParameter(QgsProcessingParameterRasterLayer(
-            self.CHM, 'Canopy height model', defaultValue=r"Z:\GIS\DataTas\Canopy Height Model Statewide\As of June 2025\TAS_CHM_2m.tif"))
+            self.CHM, 'Canopy height model', defaultValue=r"C:\CanopyHeightModel\TAS_CHM_2m.tif"))
 
         self.addParameter(QgsProcessingParameterRasterLayer(
-            self.DEM, 'DEM', defaultValue=r"Z:\GIS\DataTas\Elevation\2m Tas DEM Plus Lidar.tif"))
+            self.DEM, 'DEM', defaultValue=r"C:\ElevationModel\2mTasDEM.tif"))
             
     """
     #############################################################################################
@@ -237,10 +237,10 @@ class WTEViewshed(QgsProcessingAlgorithm):
         return 'WTE Viewshed'
 
     def group(self):
-        return 'NB Custom Scripts'
+        return 'Custom Scripts'
 
     def groupId(self):
-        return 'nbcustomscripts'
+        return 'customscripts'
 
     def createInstance(self):
         return WTEViewshed()
